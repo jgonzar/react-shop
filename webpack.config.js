@@ -18,6 +18,8 @@ module.exports = {
             '@styles':path.resolve(__dirname, 'src/styles/'),
             '@icons':path.resolve(__dirname, 'src/assets/icons/'),
             '@logos':path.resolve(__dirname, 'src/assets/logos/'),
+            '@hooks':path.resolve(__dirname, 'src/hooks/'),
+            '@context':path.resolve(__dirname, 'src/context/')
         }
     },
     module:{
@@ -26,7 +28,7 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude:/node_modules/,
                 use:{
-                    loader:'babel-loader'
+                    loader:'babel-loader' 
                 }
             },
             {
